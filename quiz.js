@@ -26,7 +26,7 @@ function checkAnswer() {
     const userAnswer = document.querySelector('input[name="quiz"]:checked');
     const feedback = document.getElementById("feedback");
 
-    if (!userAnswer) {
+    if (userAnswer === correctAnswer ) {
         feedback.textContent = "Please select an answer.";
         return;
     }
